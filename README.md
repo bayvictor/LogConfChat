@@ -16,7 +16,7 @@ LogConfChat architecture: -- A chatserver wich log allactivities for convenience
 ├── test.results.log.txt      # worksheets for development<br>
 └── write_config_file.go      # which reveals how config structs<br>
 </pre>Where                      
-2 open source golang libraries are used.
+2 open source golang libraries gocui, gonfig are used.
 =========================
 how to use:
 step 1. git clone https://www.github.com/LogConfChat.git 
