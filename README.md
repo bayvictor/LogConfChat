@@ -19,8 +19,10 @@ LogConfChat architecture: -- A chatserver wich log allactivities for convenience
 2 open source golang libraries gocui, gonfig are used.
 =========================
 how to use:
-## step 1. git clone https://www.github.com/LogConfChat.git 
+## step 1. git clone https://github.com/bayvictor/LogConfChat.git
+
 ## Step 2. cd  LogConfChat; ./run_me_once.sh
+
 ## step 3. run "./live_test.sh", inside which running servers, clients.
 ## step 3.2. servers.
       ## you can run multiple chatserver but on different port number.
@@ -29,8 +31,6 @@ how to use:
 ...
 ./cmd_chat_server  ##which default to "5000"
  server init order: check confile file first, then os.Args[], if all missing or fail using default "5000" port.
-
-
 ## Step 3.3. running client:
      connecting to right hostname, port#, with flexible initialization.
 
