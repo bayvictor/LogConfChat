@@ -3,8 +3,8 @@ A chat server in golang, which log all activities for convenience for later anal
 LogConfChat architecture: -- A chatserver wich log allactivities for convenience for later analytics,
                         and config file support in golang.
 <pre>
-<bold>1. Architecture<br>
-</bold>
+1. Architecture<br>
+
 ├── cmd_chat_client.go        # Chat with vibriant GUI-like text consule UI<br>
 ├── cmd_chat_server_7777.log  # log for exec "cmd_chat_server" when running on port# 7777<br>
 ├── cmd_chat_server.go        #<br>
