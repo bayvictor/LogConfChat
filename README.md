@@ -21,7 +21,8 @@ LogConfChat architecture: -- A chatserver wich log allactivities for convenience
 how to use:
 ## step 1. git clone https://www.github.com/LogConfChat.git 
 ## Step 2. cd  LogConfChat; ./run_me_once.sh
-## step 3. run servers. 
+## step 3. run "./live_test.sh", inside which running servers, clients.
+## step 3.2. servers.
       ## you can run multiple chatserver but on different port number.
 ./cmd_chat_server 2345
 ./cmd_chat_server 2346 
@@ -30,7 +31,8 @@ how to use:
  server init order: check confile file first, then os.Args[], if all missing or fail using default "5000" port.
 
 
-## Step 4. running client: connecting to right hostname, port#, with flexible initialization.
+## Step 3.3. running client:
+     connecting to right hostname, port#, with flexible initialization.
 
 ./cmd_chat_client localhost 2346 
 ./cmd_chat_client some_where_over_the_rainbow 3456 
