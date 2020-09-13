@@ -2,19 +2,19 @@
 A chat server in golang, which log all activities for convenience for later analytics,   and with config file boost.
 LogConfChat architecture: -- A chatserver wich log allactivities for convenience for later analytics,
                         and config file support in golang.
-1. Architecture
-├── cmd_chat_client.go  # Chat with vibriant GUI-like text consule UI
-├── cmd_chat_server_7777.log  # log for exec "cmd_chat_server" when running on port# 7777
-├── cmd_chat_server.go        #
-├── config                    # persistence config like port#, when absent or error, using cmd os.Args[] default.
-├── live_test.sh              # minute-to-minute tweak script, test out all features.
-├── pkg                       # when to "go get xxxx" external libraries put.
-├── run_me_once.sh            # init scripts, before any scripts run.
-├── src                       #  
-├── test.results.log.txt      # worksheets for development
-└── write_config_file.go      # which reveals how config structs
-
-Where by 
+1. Architecture<br>
+├── cmd_chat_client.go  # Chat with vibriant GUI-like text consule UI<br>
+├── cmd_chat_server_7777.log  # log for exec "cmd_chat_server" when running on port# 7777<br>
+├── cmd_chat_server.go        #<br>
+├── config                    # persistence config like port#, when absent or error, using cmd os.Args[] default.<br>
+├── live_test.sh              # minute-to-minute tweak script, test out all features.<br>
+├── pkg                       # when to "go get xxxx" external libraries put.<br>
+├── run_me_once.sh            # init scripts, before any scripts run.<br>
+├── src                       #  <br>
+├── test.results.log.txt      # worksheets for development<br>
+└── write_config_file.go      # which reveals how config structs<br>
+<br>
+Where by <br>
 "
 go get "github.com/tkanos/gonfig"   # GUI-emulator on text console.
 go get "github.com/jroimartin/gocui"   # config file read write port# etc.                       
@@ -48,30 +48,30 @@ Licenses. like all its dependency here, this code and it's future change here, a
 Test Results,  snapshots:
 
 One of the client "victor" view, during "daniel" and "lambda" come and go!
-┌─ messages: ───────────────────────────────────────────────┌─ 2 users: ───────┐
-│[10:49:48] + daniel connected                              │victor            │
-│[10:49:55] daniel: i am the saint                          │victor            │
-│[10:50:02] daniel: daniel the one                          │                  │
-│[10:50:09] daniel: young winner.                           │                  │
-│[11:09:53] + victor connected                              │                  │
-│[11:09:54] victor: skdfjska                                │                  │
-│[11:09:55] victor: sdfksalk;                               │                  │
-│[11:09:57] victor: 12342143                                │                  │
-│[11:09:59] victor: 34555566                                │                  │
-│[11:10:00] victor: 445                                     │                  │
-│[11:10:02] victor: hello                                   │                  │
-│[11:10:31] + lambda connected                              │                  │
-│[11:10:35] lambda: kaka                                    │                  │
-│[11:10:37] lambda: yaya                                    │                  │
-│[11:10:40] lambda: never!                                  │                  │
-│[11:10:45] - lambda disconnected                           │                  │
-│[11:17:32] - daniel disconnected                           │                  │
-│                                                           │                  │
-┌─ send: ───────────────────────────────────────────────────┐                  │
-│                                                           │                  │
-│                                                           │                  │
-│                                                           │                  │
-└───────────────────────────────────────────────────────────┘──────────────────┘
+┌─ messages: ───────────────────────────────────────────────┌─ 2 users: ───────┐<br>
+│[10:49:48] + daniel connected                              │victor            │<br>
+│[10:49:55] daniel: i am the saint                          │victor            │<br>
+│[10:50:02] daniel: daniel the one                          │                  │<br>
+│[10:50:09] daniel: young winner.                           │                  │<br>
+│[11:09:53] + victor connected                              │                  │<br>
+│[11:09:54] victor: skdfjska                                │                  │<br>
+│[11:09:55] victor: sdfksalk;                               │                  │<br>
+│[11:09:57] victor: 12342143                                │                  │<br>
+│[11:09:59] victor: 34555566                                │                  │<br>
+│[11:10:00] victor: 445                                     │                  │<br>
+│[11:10:02] victor: hello                                   │                  │<br>
+│[11:10:31] + lambda connected                              │                  │<br>
+│[11:10:35] lambda: kaka                                    │                  │<br>
+│[11:10:37] lambda: yaya                                    │                  │<br>
+│[11:10:40] lambda: never!                                  │                  │<br>
+│[11:10:45] - lambda disconnected                           │                  │<br>
+│[11:17:32] - daniel disconnected                           │                  │<br>
+│                                                           │                  │<br>
+┌─ send: ───────────────────────────────────────────────────┐                  │<br>
+│                                                           │                  │<br>
+│                                                           │                  │<br>
+│                                                           │                  │<br>
+└───────────────────────────────────────────────────────────┘──────────────────┘<br>
 
 
 Sample server log of above events:
