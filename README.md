@@ -19,9 +19,9 @@ LogConfChat architecture: -- A chatserver wich log allactivities for convenience
 2 open source golang libraries gocui, gonfig are used.
 =========================
 how to use:
-##step 1. git clone https://www.github.com/LogConfChat.git 
-##Step 2. cd  LogConfChat; ./run_me_once.sh
-##step 3. run servers. 
+## step 1. git clone https://www.github.com/LogConfChat.git 
+## Step 2. cd  LogConfChat; ./run_me_once.sh
+## step 3. run servers. 
       ## you can run multiple chatserver but on different port number.
 ./cmd_chat_server 2345
 ./cmd_chat_server 2346 
@@ -38,12 +38,12 @@ how to use:
 ./cmd_chat_client  ##which default to "localhost" "5000"
 The above server as it's name pointing out, can log all activities, can read/write config file using gonfig.
 
-Licenses. like all its dependency here, this code and it's future change here, also totally free, but provided as it is and deny all liabilities.
+## Licenses. like all its dependency here, this code and it's future change here, also totally free, but provided as it is and deny all liabilities.
 
 ================================================================================
 
 
-Test Results,  snapshots:
+## Test Results,  snapshots:
 
 One of the client "victor" view, during "daniel" and "lambda" come and go!
 <pre>
@@ -73,8 +73,8 @@ One of the client "victor" view, during "daniel" and "lambda" come and go!
 └───────────────────────────────────────────────────────────┘──────────────────┘<br>
 
 </pre>
-Sample server log of above events:
-vhuang@dell7710:/sdb3/src/golang/victorchat$ cat victor.log 
+## Sample server log of above events:
+cat victor.log 
 + victor connected
 2020/09/13 10:48:08 + victor connected
 victor: ye,ye, n\ya, yum,yum
