@@ -27,10 +27,10 @@ step 3. servers.
 ./cmd_chat_server 2346 
 ...
 ./cmd_chat_server  ##which default to "5000"
-## server init order, check confile file first, then os.Args[], if all missing or fail using default "5000" port.
+ server init order: check confile file first, then os.Args[], if all missing or fail using default "5000" port.
 
 
-Step 4. running client connecting to right hostname, port#, with flexible initialization.
+## Step 4. running client connecting to right hostname, port#, with flexible initialization.
 
 ./cmd_chat_client localhost 2346 
 ./cmd_chat_client some_where_over_the_rainbow 3456 
