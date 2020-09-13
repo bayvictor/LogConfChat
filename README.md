@@ -48,6 +48,7 @@ Licenses. like all its dependency here, this code and it's future change here, a
 Test Results,  snapshots:
 
 One of the client "victor" view, during "daniel" and "lambda" come and go!
+<pre>
 ┌─ messages: ───────────────────────────────────────────────┌─ 2 users: ───────┐<br>
 │[10:49:48] + daniel connected                              │victor            │<br>
 │[10:49:55] daniel: i am the saint                          │victor            │<br>
@@ -73,7 +74,7 @@ One of the client "victor" view, during "daniel" and "lambda" come and go!
 │                                                           │                  │<br>
 └───────────────────────────────────────────────────────────┘──────────────────┘<br>
 
-
+</pre>
 Sample server log of above events:
 vhuang@dell7710:/sdb3/src/golang/victorchat$ cat victor.log 
 + victor connected
