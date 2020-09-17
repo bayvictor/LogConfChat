@@ -1,4 +1,4 @@
-# LogConfChat
+# LogConfChat -- golang chat server, with a GUI-emulating, console UI , with both config-file & command line boost(host/port# etc), chat is loggable!
 A chat server in golang, which log all activities for convenience for later analytics,   and with config file boost.
 LogConfChat architecture: -- A chatserver wich log allactivities for convenience for later analytics,
                         and config file support in golang.
