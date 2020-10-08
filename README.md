@@ -23,10 +23,10 @@ how to use:
 
 ## Step 2. cd  LogConfChat; source ./run_me_once.sh ## WARNING: if you missed this step, everything goes wrong!
 
-## step 3. run "./live_test.sh", inside which running servers, clients.
+## step 3. run "source ./live_test.sh", inside which, setup GOPATH, running servers, clients.
 ## step 3.2. servers.
       ## you can run multiple chatserver but on different port number.
-./cmd_chat_server 2345
+./cmd_chat_server 2345 ## REPLACE 2345 with the actual port#, matching up-running server port you mean to 
 ./cmd_chat_server 2346 
 ...
 ./cmd_chat_server  ##which default to "5000"
@@ -34,7 +34,7 @@ how to use:
 ## Step 3.3. running client:
      connecting to right hostname, port#, with flexible initialization.
 
-./cmd_chat_client localhost 2346 
+./cmd_chat_client localhost 2346 ##REPLACE 2345 with the actual port#, matching up-running server port you mean to connect
 ./cmd_chat_client some_where_over_the_rainbow 3456 
 ./cmd_chat_client remote_host 5678 
 ./cmd_chat_client  ##which default to "localhost" "5000"
