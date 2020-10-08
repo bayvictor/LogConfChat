@@ -21,7 +21,7 @@ LogConfChat architecture: -- A chatserver wich log allactivities for convenience
 how to use:
 ## step 1. git clone https://github.com/bayvictor/LogConfChat.git
 
-## Step 2. cd  LogConfChat; ./run_me_once.sh
+## Step 2. cd  LogConfChat; source ./run_me_once.sh ## WARNING: if you missed this step, everything goes wrong!
 
 ## step 3. run "./live_test.sh", inside which running servers, clients.
 ## step 3.2. servers.
